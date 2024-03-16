@@ -389,34 +389,3 @@ footer .column > a:hover{
         grid-template-columns: 1fr 200px;
     }
 }
-
-@media (width < 600px){
-    header .image::before{
-        display: none;
-    }
-
-    .features{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .pricing{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    footer{
-        grid-template-columns: 1fr 150px;
-    }
-
-
-
-    button{
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    color: #fff;
-    font-size: 0.8rem;
-    border-radius: 15px;
-  
-  }
-}
-
