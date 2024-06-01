@@ -1,0 +1,124 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="style.css">
+    <title>The Last Horizon</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/UNWARE STUDIO.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li id="link1" class="link"><a href="confidentality.html">Privacy Policy</a></li>
+            <li id="link1" class="link"><a href="Cookies.html">Cookies Policy</a></li>
+            <li id="link3" class="link"><a href="AboutMe.html">About Me </a></li>
+            <li id="link3" class="link"><a href="">Contact Me </a></li>
+        </ul>
+        <button class="tn"><a href="Contact.html"></a></button>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <h4></h4>
+            <H1>THE LAST HORIZON   <span></span></H1>
+            <p>
+                Contact Page.
+           
+            <p>
+               
+            </p>
+            
+        </div>
+        <div class="imge">
+            <img src="images/THE LAST HORIZON.png">
+        </div>
+    </header>
+
+    
+
+
+
+
+ 
+<div class="container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+    <div class="contact-left-title">
+    <h2>Sublim Ticket</h2>
+    <hr>
+</div>
+<input type="hidden" name="access_key" value="c5fdf7c5-0527-4c26-a167-d4d5fbc388cc">
+    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+    <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+    <textarea name="message"  placeholder="Your Message" class="contact-inputs" required></textarea>
+   
+ 
+       <button type="submit">Submit<img src="images/ARROW.png" alt="submit"></button>
+    </form>
+
+
+    
+    <footer class="container">
+        <div class="column">
+            <div class="logo">
+                <img src="images/UNWARE STUDIO.png">
+            </div>
+            <p>
+                
+            </p>
+            <div class="socials">
+                <a href="https://youtube.com/@WareStudioSupp?si=P66b--X0IkE5TV5b"><i class="ri-youtube-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Company</h4>
+            <a href="#">Business</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="Contact.html">Contact Me</a>
+            <a href="confidentality.html">Privicy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2024 UNWARE STUDIO. All Rights Reserved.
+    </div>
+
+
+
+
+ 
+</body>
+</html>
+
+
