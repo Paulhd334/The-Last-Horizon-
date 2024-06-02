@@ -441,8 +441,8 @@ img {
 
 
 .small-image {
-    width: 50px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width:  100px; /* Adjust the width as needed */
+    height: 100px; /* Maintain aspect ratio */
 }
 
 
