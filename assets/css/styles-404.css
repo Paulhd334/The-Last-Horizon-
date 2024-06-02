@@ -41,6 +41,11 @@
     margin-right: 2px;
 }
 
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
 
 /*=============== BASE ===============*/
 * {
