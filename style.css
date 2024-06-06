@@ -405,7 +405,30 @@ footer .column > a:hover{
 
 
 
+
+
 @media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
     header .image::before{
         display: none;
     }
@@ -440,11 +463,6 @@ footer .column > a:hover{
   
 }
 
-
-
-
-
-    
 
 
 
