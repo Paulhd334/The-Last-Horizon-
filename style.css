@@ -400,7 +400,7 @@ footer .column > a:hover{
 }
 
 /* Show the dropdown on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 390px) {
     .nav-links {
         display: none;
     }
