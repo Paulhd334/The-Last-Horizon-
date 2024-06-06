@@ -444,32 +444,7 @@ footer .column > a:hover{
     footer{
         grid-template-columns: 1fr 150px;
     }
-
-
-
-
-    button{
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    color: #fff;
-    font-size: 0.8rem;
-    border-radius: 15px;
-  
   }
-
-
-
-  
-}
-
-
-
-
-
-
-
-
 
 
 
