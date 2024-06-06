@@ -419,6 +419,7 @@ footer .column > a:hover{
     cursor: pointer;
     width: 100%;
     text-align: left;
+    border-radius: 15px;
 }
 
 /* Dropdown container */
