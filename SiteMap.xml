@@ -7,10 +7,27 @@
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://the-last-horizon.fr/ContatcMe</loc>
+      <loc>https://the-last-horizon.fr</loc>
       <lastmod>2024-02-27</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
    </url>
    <!-- More URLs go here -->
+
+     <!-- Page de contact -->
+    <url>
+        <loc>https://the-last-horizon.fr/Contact.html</loc>
+        <lastmod>2024-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+        <!-- Page de Cookies -->
+    <url>
+        <loc>https://the-last-horizon.fr/Cookies.html</loc>
+        <lastmod>2024-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+   
 </urlset>
