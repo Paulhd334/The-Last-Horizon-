@@ -77,9 +77,6 @@
 </script>
 
 
-
-    
-
   <script>
   function loadGoogleAnalytics() {
     // Charger le script de Google Analytics ici
@@ -103,6 +100,29 @@
   });
 </script>
   
+
+
+<script>
+  function loadGA4() {
+    var script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"; // Remplace par ton identifiant GA4
+    script.async = true;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3SR1TYY3HP'); // Remplace également ici par ton ID GA4
+  }
+
+  // Charger GA4 uniquement si le consentement est donné
+  if (userConsentGiven) {
+    loadGA4();
+  }
+</script>
 
 
     
