@@ -66,10 +66,9 @@
 
 
     <script>
-  // Fonction pour charger Google Analytics 4
   function loadGA4() {
     var script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-3SR1TYY3HP"; // identifiant GA4
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-3SR1TYY3HP"; //  identifiant GA4
     script.async = true;
     document.head.appendChild(script);
 
@@ -79,35 +78,46 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'G-3SR1TYY3HP'); //  ID GA4
+    gtag('config', 'G-3SR1TYY3HP'); //  ton ID GA4
   }
 
-  // Vérifier le consentement de l'utilisateur avec Cookiebot
+  // Fonction pour vérifier le consentement
   function checkConsent() {
     if (typeof Cookiebot !== 'undefined') {
-      if (Cookiebot.consents.given) { // Ajuste cette vérification selon ton implémentation
+      if (Cookiebot.consents && Cookiebot.consents.given) {
+        // Consentement donné, charger GA4
         loadGA4();
+      } else {
+        // Pas de consentement ou Cookiebot non chargé
+        console.warn('Consentement non donné ou Cookiebot non chargé');
       }
     } else {
-      console.warn('Cookiebot not defined');
+      console.warn('Cookiebot non défini');
     }
   }
 
-  // Appel de la fonction de vérification après le chargement de Cookiebot
+  // Appeler checkConsent après que Cookiebot soit chargé
   document.addEventListener('DOMContentLoaded', function() {
-    checkConsent();
+    // Vérifie le consentement immédiatement ou lorsque Cookiebot émet un événement
+    if (typeof Cookiebot !== 'undefined') {
+      Cookiebot.on('consentGiven', function() {
+        checkConsent();
+      });
+    } else {
+      // Appelle checkConsent après un délai si Cookiebot n'est pas encore disponible
+      setTimeout(checkConsent, 1000);
+    }
   });
 </script>
 
 
 
-
-
-
-
-
-
     
+  
+
+
+
+
 
     
  </head>
