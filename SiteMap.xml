@@ -30,4 +30,20 @@
         <priority>0.5</priority>
     </url>
    
+        <!-- Page des Images -->
+    <url>
+        <loc>https://the-last-horizon.fr/Pictures.html</loc>
+        <lastmod>2024-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+        <!-- Page de About Me  -->
+    <url>
+        <loc>https://the-last-horizon.fr/AboutMe.html</loc>
+        <lastmod>2024-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url> 
+   
 </urlset>
