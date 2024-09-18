@@ -51,8 +51,6 @@
 
     <!-------------------------------------- COOKIE  BOT INTEGRATION ---------------------------------------->
 
-
-    
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2957797d-2895-4ed6-bdfc-5045c48022a8" data-blockingmode="auto" type="text/javascript"></script>
 
 
@@ -64,57 +62,16 @@
   <!-------------------------------------- COOKIE  BOT INTEGRATION + GOOGLE ANALYTICS---------------------------------------->
 
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- Script Cookiebot -->
-  <script id="cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="YOUR_COOKIEBOT_ID" type="text/javascript" async></script>
-  
-  <script>
-    // Fonction pour charger Google Analytics 4
-    function loadGA4() {
-      var script = document.createElement("script");
-      script.src = "https://www.googletagmanager.com/gtag/js?id=G-3SR1TYY3HP"; identifiant GA4
-      script.async = true;
-      document.head.appendChild(script);
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-3SR1TYY3HP'); //   ID GA4
-    }
-
-    // Fonction pour vérifier le consentement
-    function checkConsent() {
-      if (typeof Cookiebot !== 'undefined') {
-        // Vérifier si le consentement a été donné
-        var consentGiven = Cookiebot.consents.given;
-        if (consentGiven) {
-          loadGA4();
-        } else {
-          console.warn('Consentement non donné');
-        }
-      } else {
-        console.warn('Cookiebot non défini');
-      }
-    }
-
-    // Appeler checkConsent après le chargement de Cookiebot
-    document.addEventListener('DOMContentLoaded', function() {
-      // Vérifier le consentement immédiatement
-      checkConsent();
-
-      // Vérifier également après un délai au cas où Cookiebot se chargerait lentement
-      setTimeout(checkConsent, 1000);
-    });
-  </script>
-
     
+<script>
+  window.addEventListener('CookieConsentDeclaration', function() {
+    if (CookieConsent.hasConsented()) {
+      // Load GA4 script only if consent is given
+      gtag('config', 'G-3SR1TYY3HP');
+    }
+  });
+</script>
+
   
 
 
