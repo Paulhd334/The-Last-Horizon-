@@ -62,50 +62,14 @@
 <script data-cookieconsent="ignore">    window.dataLayer = window.dataLayer || [];    function gtag() {        dataLayer.push(arguments);    }    gtag("consent", "default", {        ad_personalization: "denied",        ad_storage: "denied",        ad_user_data: "denied",        analytics_storage: "denied",        functionality_storage: "denied",        personalization_storage: "denied",        security_storage: "granted",        wait_for_update: 500,    });    gtag("set", "ads_data_redaction", true);    gtag("set", "url_passthrough", false);</script>
 
   <!-------------------------------------- COOKIE  BOT INTEGRATION + GOOGLE ANALYTICS---------------------------------------->
-    
-<script type="text/plain" data-cookieconsent="statistics">
-  // Script Google Analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.googletagmanager.com/gtag/js?id=G-3SR1TYY3H');
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3SR1TYY3HP');
-</script>
 
 
-  <script>
-  function loadGoogleAnalytics() {
-    // Charger le script de Google Analytics ici
-    var script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-3SR1TYY3HP";
-    script.async = true;
-    document.head.appendChild(script);
 
-    // Configuration de Google Analytics après le chargement
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3SR1TYY3HP');
-  }
-
-  // Vérifie si l'utilisateur a consenti aux cookies de statistiques
-  window.addEventListener('CookieConsentDeclaration', function() {
-    if (Cookiebot.consents.statistics) {
-      loadGoogleAnalytics();
-    }
-  });
-</script>
-  
-
-
-<script>
+    <script>
+  // Fonction pour charger Google Analytics 4
   function loadGA4() {
     var script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"; // Remplace par ton identifiant GA4
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-3SR1TYY3HP"; // identifiant GA4
     script.async = true;
     document.head.appendChild(script);
 
@@ -115,20 +79,38 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'G-3SR1TYY3HP'); // Remplace également ici par ton ID GA4
+    gtag('config', 'G-3SR1TYY3HP'); //  ID GA4
   }
 
-  // Charger GA4 uniquement si le consentement est donné
-  if (userConsentGiven) {
-    loadGA4();
+  // Vérifier le consentement de l'utilisateur avec Cookiebot
+  function checkConsent() {
+    if (typeof Cookiebot !== 'undefined') {
+      if (Cookiebot.consents.given) { // Ajuste cette vérification selon ton implémentation
+        loadGA4();
+      }
+    } else {
+      console.warn('Cookiebot not defined');
+    }
   }
+
+  // Appel de la fonction de vérification après le chargement de Cookiebot
+  document.addEventListener('DOMContentLoaded', function() {
+    checkConsent();
+  });
 </script>
 
 
+
+
+
+
+
+
+
     
 
     
-</head>
+ </head>
 
 <body>
     <!-------------------------------------- COOKIE ---------------------------------------->
