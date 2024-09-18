@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://the-last-horizon.fr/</loc>
-      <lastmod>2024-02-28</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://the-last-horizon.fr</loc>
-      <lastmod>2024-02-27</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
-   </url>
-   <!-- More URLs go here -->
-
-     <!-- Page de contact -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- Créé avec Free Online Sitemap Generator www.xml-sitemaps.com -->
     <url>
-        <loc>https://the-last-horizon.fr/Contact.html</loc>
-        <lastmod>2024-09-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://the-last-horizon.fr/</loc>
+        <lastmod>2024-09-18T12:00:47+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.00</priority>
     </url>
-
-        <!-- Page de Cookies -->
     <url>
         <loc>https://the-last-horizon.fr/Cookies.html</loc>
-        <lastmod>2024-09-05</lastmod>
+        <lastmod>2024-09-18T12:00:47+00:00</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.80</priority>
     </url>
-   
-        <!-- Page des Images -->
+    <url>
+        <loc>https://the-last-horizon.fr/index.html</loc>
+        <lastmod>2024-09-18T12:00:47+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
     <url>
         <loc>https://the-last-horizon.fr/Pictures.html</loc>
-        <lastmod>2024-09-05</lastmod>
+        <lastmod>2024-09-18T12:00:47+00:00</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.80</priority>
     </url>
-
-        <!-- Page de About Me  -->
+    <url>
+        <loc>https://the-last-horizon.fr/confidentality.html</loc>
+        <lastmod>2024-09-18T12:00:47+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
     <url>
         <loc>https://the-last-horizon.fr/AboutMe.html</loc>
-        <lastmod>2024-09-05</lastmod>
+        <lastmod>2024-09-18T12:00:47+00:00</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url> 
-   
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://the-last-horizon.fr/Contact.html</loc>
+        <lastmod>2024-09-18T12:00:47+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
 </urlset>
