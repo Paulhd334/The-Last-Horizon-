@@ -61,11 +61,13 @@
 
 
 
+
+    
  
  </head>
 
 <body>
-    <!-------------------------------------- COOKIE ---------------------------------------->
+    <!--------------------------------------/ OLD  COOKIE I ENABLE _ DISABLE \  ---------------------------------------->
 
 
    <!-- <p>Ceci est une ligne temporairement désactivée
@@ -88,6 +90,59 @@
       </div>
         
     .</p> -->
+
+
+
+
+
+    
+<!-- Cookie Bot Script FIXE  -->
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="YOUR_COOKIEBOT_ID" type="text/javascript" async></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3SR1TYY3HP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  gtag('js', new Date());
+
+  // Do not track analytics by default until consent is given
+  gtag('config', 'G-3SR1TYY3HP', {
+    'anonymize_ip': true,
+    'allow_google_signals': false,
+    'allow_ad_personalization_signals': false
+  });
+</script>
+
+<!-- Handle Cookie Consent with Cookiebot -->
+<script>
+  window.addEventListener('CookieConsentDeclaration', function() {
+    if (CookieConsent.categories.marketing) {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'analytics_storage': 'granted'
+      });
+    } else if (CookieConsent.categories.statistics) {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    }
+  });
+</script>
+
+
+
+
+
+<!-- Cookie Bot Script FIXE end   -->
+
+
+
 
     
     <nav>
