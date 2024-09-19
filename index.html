@@ -63,10 +63,9 @@
 
 
 
-    
 
 
-<!-- Google Analytics 4 -->
+<!-- Global site tag (gtag.js) - Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SR1TYY3HP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -78,6 +77,7 @@
 
   gtag('js', new Date());
 
+  // Do not track analytics by default until consent is given
   gtag('config', 'G-3SR1TYY3HP', {
     'anonymize_ip': true,
     'allow_google_signals': false,
@@ -88,17 +88,15 @@
 <!-- Handle Cookie Consent with Cookiebot -->
 <script>
   window.addEventListener('CookieConsentDeclaration', function() {
-    if (typeof CookieConsent !== 'undefined') {
-      if (CookieConsent.categories.marketing) {
-        gtag('consent', 'update', {
-          'ad_storage': 'granted',
-          'analytics_storage': 'granted'
-        });
-      } else if (CookieConsent.categories.statistics) {
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted'
-        });
-      }
+    if (CookieConsent.categories.marketing) {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'analytics_storage': 'granted'
+      });
+    } else if (CookieConsent.categories.statistics) {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
     }
   });
 </script>
@@ -107,10 +105,6 @@
 
 
 
-
-
-
-    
  
  </head>
 
