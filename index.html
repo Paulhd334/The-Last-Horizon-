@@ -35,9 +35,6 @@
 
 
 
-
-
-
     
     <script>
         // Check if the URL ends with 'index.html'
@@ -63,6 +60,72 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "ltkga7ad74");
     </script>
+
+
+
+
+
+
+    <!-- Script Google Analytics conditionné -->
+    <script type="text/javascript">
+        function loadGA() {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'G-3SR1TYY3HP', 'auto');
+            ga('send', 'pageview');
+        }
+
+        // Cookie consent condition
+        window.addEventListener("CookieConsentDeclaration", function(e) {
+            var consent = CookieConsent.getConsent();
+            if (consent && consent.statistics) {
+                loadGA();  // Charge Google Analytics si le consentement est donné
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     <!-------------------------------------- COOKIE  BOT INTEGRATION ---------------------------------------->
 
