@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="Contact.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cookie.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-123abc'; style-src 'self'; img-src 'self' data:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://apis.google.com; style-src 'self' https://fonts.googleapis.com; img-src 'self' https://the-last-horizon.fr; font-src 'self' https://fonts.gstatic.com;">
+
 
 
     
@@ -34,7 +36,7 @@
        if (window.location.pathname === '/index.html') {
         window.location.replace('/');
        }
-   </script>
+    </script>
 
 
 
