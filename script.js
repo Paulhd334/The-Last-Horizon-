@@ -1,33 +1,25 @@
 function scrollToElement(elementSelector, instance = 0) {
-    // Select all elements that match the given selector
+    // Stocker tous les éléments dans une variable
     const elements = document.querySelectorAll(elementSelector);
-    // Check if there are elements matching the selector and if the requested instance exists
+    // Vérifier si des éléments correspondent au sélecteur et si l'instance demandée existe
     if (elements.length > instance) {
-        // Scroll to the specified instance of the element
+        // Faire défiler vers l'instance spécifiée de l'élément
         elements[instance].scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.warn(`Instance ${instance} non trouvée pour le sélecteur "${elementSelector}".`);
     }
 }
 
-const link1 = document.getElementById("link1");
-const link2 = document.getElementById("link2");
-const link3 = document.getElementById("link3");
+// Stocker les éléments de lien dans un tableau pour itération
+const links = [
+    { element: document.getElementById("link1"), selector: '.header', instance: 0 },
+    { element: document.getElementById("link2"), selector: '.header', instance: 1 },
+    { element: document.getElementById("link3"), selector: '.column', instance: 0 }
+];
 
-link1.addEventListener('click', () => {
-    scrollToElement('.header');
+// Boucle sur chaque lien pour ajouter un événement de clic
+links.forEach(link => {
+    link.element.addEventListener('click', () => {
+        scrollToElement(link.selector, link.instance);
+    });
 });
-
-link2.addEventListener('click', () => {
-    // Scroll to the second element with "header" class
-    scrollToElement('.header', 1);
-});
-
-link3.addEventListener('click', () => {
-    scrollToElement('.column');
-});
-
-
-
-
-
-
-
