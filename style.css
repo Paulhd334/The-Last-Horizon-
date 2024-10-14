@@ -69,7 +69,6 @@ nav{
 }
 
 
-
 .btn {
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -86,7 +85,7 @@ nav{
         opacity: 1; /* Opacité pleine */
     }
     50% {
-        opacity: 0; /* Invisible à mi-chemin */
+        opacity: 0.3; /* Réduire l'opacité à 30% */
     }
 }
 
