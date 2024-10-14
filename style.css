@@ -68,7 +68,9 @@ nav{
     width: 70%;
 }
 
-.btn{
+
+
+.btn {
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
@@ -76,7 +78,20 @@ nav{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    animation: blink 1s infinite; /* Ajoutez l'animation ici */
 }
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Opacité pleine */
+    }
+    50% {
+        opacity: 0; /* Invisible à mi-chemin */
+    }
+}
+
+
+
 
 .btn:hover{
     background-color: #1e40af;
