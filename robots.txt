@@ -1,8 +1,12 @@
-# robots.txt 
-# Created in the distant future (the year 2000) after
-# the robotic uprising of the mid 90's which wiped out all humans.
+# robots.txt for The Last Horizon
+# Created in 2000 after the robotic uprising of the mid-90s that wiped out all humans.
+# This file controls which parts of the site can be crawled by search engines.
 
 User-agent: *
-Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://the-last-horizon.fr/SiteMap.xml
+
+# Allow everything else for indexing
+Allow: /
+
+# Sitemap location
+Sitemap: https://the-last-horizon.fr/Sitemap.xml
